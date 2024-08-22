@@ -38,11 +38,9 @@ Core/Src/sys_debug.o: ../Core/Src/sys_debug.c ../Core/Inc/platform.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
  ../Core/Inc/main.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_gpio.h \
- E:/Playground/STM32CubeIDE_Workspace/WL55JC\ Ping\ Pong\ M4/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.h \
- E:/Playground/STM32CubeIDE_Workspace/WL55JC\ Ping\ Pong\ M4/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h \
- ../Core/Inc/stm32wlxx_nucleo_conf.h \
- E:/Playground/STM32CubeIDE_Workspace/WL55JC\ Ping\ Pong\ M4/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h \
- ../Core/Inc/sys_debug.h ../Core/Inc/sys_conf.h ../Core/Inc/platform.h
+ E:/Playground/STM32CubeIDE_Workspace/Olimex\ Ping\ Pong\ M4/Drivers/BSP/olimex_bsp.h \
+ ../Core/Inc/main.h ../Core/Inc/sys_debug.h ../Core/Inc/sys_conf.h \
+ ../Core/Inc/platform.h
 ../Core/Inc/platform.h:
 ../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wlxx.h:
 ../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h:
@@ -83,10 +81,8 @@ Core/Src/sys_debug.o: ../Core/Src/sys_debug.c ../Core/Inc/platform.h \
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_gpio.h:
-E:/Playground/STM32CubeIDE_Workspace/WL55JC\ Ping\ Pong\ M4/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.h:
-E:/Playground/STM32CubeIDE_Workspace/WL55JC\ Ping\ Pong\ M4/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h:
-../Core/Inc/stm32wlxx_nucleo_conf.h:
-E:/Playground/STM32CubeIDE_Workspace/WL55JC\ Ping\ Pong\ M4/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h:
+E:/Playground/STM32CubeIDE_Workspace/Olimex\ Ping\ Pong\ M4/Drivers/BSP/olimex_bsp.h:
+../Core/Inc/main.h:
 ../Core/Inc/sys_debug.h:
 ../Core/Inc/sys_conf.h:
 ../Core/Inc/platform.h:

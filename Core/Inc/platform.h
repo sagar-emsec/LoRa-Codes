@@ -28,7 +28,6 @@ extern "C" {
 
 /* Exported constants --------------------------------------------------------*/
 
-#define USE_BSP_DRIVER
 /* USER CODE BEGIN EC */
 
 /* USER CODE END EC */
@@ -47,7 +46,7 @@ extern "C" {
 #endif /* defined(USE_BSP_DRIVER) */
 
 /* USER CODE BEGIN include */
-
+#include "olimex_bsp.h"
 /* USER CODE END include */
 
 /* Exported types ------------------------------------------------------------*/

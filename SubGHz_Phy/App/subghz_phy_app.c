@@ -351,9 +351,9 @@ static void PingPong_Process(void)
           {
             UTIL_TIMER_Stop(&timerLed);
             /* switch off green led */
-            HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET); /* LED_GREEN */
-            /* master toggles red led */
-            HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin); /* LED_RED */
+//            HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET); /* LED_GREEN */
+//            /* master toggles red led */
+//            HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin); /* LED_RED */
             /* Add delay between RX and TX */
             HAL_Delay(Radio.GetWakeupTime() + RX_TIME_MARGIN);
             /* master sends PING*/
@@ -388,9 +388,9 @@ static void PingPong_Process(void)
           {
             UTIL_TIMER_Stop(&timerLed);
             /* switch off red led */
-            HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET); /* LED_RED */
-            /* slave toggles green led */
-            HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin); /* LED_GREEN */
+//            HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET); /* LED_RED */
+//            /* slave toggles green led */
+//            HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin); /* LED_GREEN */
             /* Add delay between RX and TX */
             HAL_Delay(Radio.GetWakeupTime() + RX_TIME_MARGIN);
             /*slave sends PONG*/
@@ -445,8 +445,7 @@ static void PingPong_Process(void)
 
 static void OnledEvent(void *context)
 {
-  HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin); /* LED_GREEN */
-  HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin); /* LED_RED */
+  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin); /* LED_GREEN */
   UTIL_TIMER_Start(&timerLed);
 }
 

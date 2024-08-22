@@ -18,7 +18,7 @@ RM := rm -rf
 -include SubGHz_Phy/App/subdir.mk
 -include Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/subdir.mk
 -include Drivers/STM32WLxx_HAL_Driver/Src/subdir.mk
--include Drivers/BSP/STM32WLxx_Nucleo/subdir.mk
+-include Drivers/BSP/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include objects.mk
@@ -43,34 +43,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := WL55JC Ping Pong M4
+BUILD_ARTIFACT_NAME := Olimex Ping Pong M4
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-WL55JC\ Ping\ Pong\ M4.elf \
+Olimex\ Ping\ Pong\ M4.elf \
 
 MAP_FILES += \
-WL55JC\ Ping\ Pong\ M4.map \
+Olimex\ Ping\ Pong\ M4.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-WL55JC\ Ping\ Pong\ M4.list \
+Olimex\ Ping\ Pong\ M4.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: WL55JC\ Ping\ Pong\ M4.elf secondary-outputs
+main-build: Olimex\ Ping\ Pong\ M4.elf secondary-outputs
 
 # Tool invocations
-WL55JC\ Ping\ Pong\ M4.elf WL55JC\ Ping\ Pong\ M4.map: $(OBJS) $(USER_OBJS) E:\Playground\STM32CubeIDE_Workspace\WL55JC\ Ping\ Pong\ M4\STM32WL55JCIX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "WL55JC Ping Pong M4.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\Playground\STM32CubeIDE_Workspace\WL55JC Ping Pong M4\STM32WL55JCIX_FLASH.ld" --specs=nosys.specs -Wl,-Map="WL55JC Ping Pong M4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Olimex\ Ping\ Pong\ M4.elf Olimex\ Ping\ Pong\ M4.map: $(OBJS) $(USER_OBJS) E:\Playground\STM32CubeIDE_Workspace\Olimex\ Ping\ Pong\ M4\STM32WL55JCIX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Olimex Ping Pong M4.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\Playground\STM32CubeIDE_Workspace\Olimex Ping Pong M4\STM32WL55JCIX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Olimex Ping Pong M4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -79,14 +79,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-WL55JC\ Ping\ Pong\ M4.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "WL55JC Ping Pong M4.list"
+Olimex\ Ping\ Pong\ M4.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Olimex Ping Pong M4.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) WL55JC\ Ping\ Pong\ M4.elf WL55JC\ Ping\ Pong\ M4.list WL55JC\ Ping\ Pong\ M4.map WL55JC\\ Ping\\ Pong\\ M4.elf default.size.stdout
+	-$(RM) Olimex\ Ping\ Pong\ M4.elf Olimex\ Ping\ Pong\ M4.list Olimex\ Ping\ Pong\ M4.map Olimex\\ Ping\\ Pong\\ M4.elf default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

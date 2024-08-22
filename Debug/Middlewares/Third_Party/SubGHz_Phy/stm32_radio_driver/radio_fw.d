@@ -47,11 +47,9 @@ Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_fw.o: \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
  ../Core/Inc/main.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_gpio.h \
- E:/Playground/STM32CubeIDE_Workspace/WL55JC\ Ping\ Pong\ M4/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.h \
- E:/Playground/STM32CubeIDE_Workspace/WL55JC\ Ping\ Pong\ M4/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h \
- ../Core/Inc/stm32wlxx_nucleo_conf.h \
- E:/Playground/STM32CubeIDE_Workspace/WL55JC\ Ping\ Pong\ M4/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h \
- ../Core/Inc/subghz.h ../SubGHz_Phy/Target/mw_log_conf.h \
+ E:/Playground/STM32CubeIDE_Workspace/Olimex\ Ping\ Pong\ M4/Drivers/BSP/olimex_bsp.h \
+ ../Core/Inc/main.h ../Core/Inc/subghz.h \
+ ../SubGHz_Phy/Target/mw_log_conf.h \
  ../Utilities/trace/adv_trace/stm32_adv_trace.h \
  ../SubGHz_Phy/Target/radio_board_if.h ../Core/Inc/utilities_def.h \
  ../Core/Inc/sys_debug.h ../Core/Inc/sys_conf.h ../Core/Inc/platform.h \
@@ -108,10 +106,8 @@ Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_fw.o: \
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_gpio.h:
-E:/Playground/STM32CubeIDE_Workspace/WL55JC\ Ping\ Pong\ M4/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.h:
-E:/Playground/STM32CubeIDE_Workspace/WL55JC\ Ping\ Pong\ M4/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h:
-../Core/Inc/stm32wlxx_nucleo_conf.h:
-E:/Playground/STM32CubeIDE_Workspace/WL55JC\ Ping\ Pong\ M4/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h:
+E:/Playground/STM32CubeIDE_Workspace/Olimex\ Ping\ Pong\ M4/Drivers/BSP/olimex_bsp.h:
+../Core/Inc/main.h:
 ../Core/Inc/subghz.h:
 ../SubGHz_Phy/Target/mw_log_conf.h:
 ../Utilities/trace/adv_trace/stm32_adv_trace.h:

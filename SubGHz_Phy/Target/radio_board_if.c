@@ -1,21 +1,21 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file    radio_board_if.c
-  * @author  MCD Application Team
-  * @brief   This file provides an interface layer between MW and Radio Board
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2021 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file    radio_board_if.c
+ * @author  MCD Application Team
+ * @brief   This file provides an interface layer between MW and Radio Board
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2021 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
@@ -130,6 +130,7 @@ int32_t RBI_ConfigRFSwitch(RBI_Switch_TypeDef Config)
   int32_t retcode = 0;
   /* USER CODE BEGIN RBI_ConfigRFSwitch_2 */
 #warning user to provide its board code or to call his board driver functions
+	Olimex_ConfigRfSwitch(Config);
   /* USER CODE END RBI_ConfigRFSwitch_2 */
   return retcode;
 #endif  /* USE_BSP_DRIVER */
@@ -234,14 +235,11 @@ int32_t RBI_GetRFOMaxPowerConfig(RBI_RFOMaxPowerConfig_TypeDef Config)
   int32_t ret = 0;
   /* USER CODE BEGIN RBI_GetRFOMaxPowerConfig_2 */
 #warning user to provide its board code or to call his board driver functions
-  if (Config == RBI_RFO_LP_MAXPOWER)
-  {
-    ret = 15; /*dBm*/
-  }
-  else
-  {
-    ret = 22; /*dBm*/
-  }
+	if (Config == RBI_RFO_LP_MAXPOWER) {
+		ret = 15; /*dBm*/
+	} else {
+		ret = 22; /*dBm*/
+	}
   /* USER CODE END RBI_GetRFOMaxPowerConfig_2 */
   return ret;
 #endif  /* USE_BSP_DRIVER  */

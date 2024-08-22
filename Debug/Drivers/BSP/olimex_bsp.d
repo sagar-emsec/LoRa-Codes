@@ -1,8 +1,5 @@
-Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.o: \
- ../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.c \
- ../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.h \
- ../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h \
- ../Core/Inc/stm32wlxx_nucleo_conf.h \
+Drivers/BSP/olimex_bsp.o: ../Drivers/BSP/olimex_bsp.c \
+ ../Drivers/BSP/olimex_bsp.h ../Core/Inc/main.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h \
  ../Core/Inc/stm32wlxx_hal_conf.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_dma.h \
@@ -40,9 +37,8 @@ Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.o: \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
-../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.h:
-../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h:
-../Core/Inc/stm32wlxx_nucleo_conf.h:
+../Drivers/BSP/olimex_bsp.h:
+../Core/Inc/main.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h:
 ../Core/Inc/stm32wlxx_hal_conf.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_dma.h:
